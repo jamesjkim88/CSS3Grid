@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    background-color: #f1f1f1;
+}
+
+.row{
+    height: 100%;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.clear{
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: " ";
+    display: block;
+}
+
+/************
+GRID SYSTEM
+************/
+
+.row{
+    border: 1px solid lightgray;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.row:after{
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: " ";
+    display: block;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+
+.col-1{
+    width: 8.33%;
+}
+
+.col-2{
+    width: 16.67%;
+}
+
+.col-3{
+    width: 25%;
+}
+
+.col-4{
+    width: 33.33%;
+}
+
+.col-5{
+    width: 41.65%;
+}
+
+.col-6{
+    width: 50%;
+}
+
+.col-7{
+    width: 58.31%;
+}
+
+.col-8{
+    width: 66.64%;
+}
+
+.col-9{
+    width: 74.97%;
+}
+
+.col-10{
+    width: 83.3%;
+}
+
+.col-11{
+    width: 91.63%;
+}
+
+.col-12{
+    width: 100%;
+}
+
+/*\Medium Screen \*/
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait){
+    .medium-col-1{
+        width: 8.33%;
+    }
+
+    .medium-col-2{
+        width: 16.67%;
+    }
+
+    .medium-col-3{
+        width: 25%;
+    }
+
+    .medium-col-4{
+        width: 33.33%;
+    }
+
+    .medium-col-5{
+        width: 41.65%;
+    }
+
+    .medium-col-6{
+        width: 50%;
+    }
+
+    .medium-col-7{
+        width: 58.31%;
+    }
+
+    .medium-col-8{
+        width: 66.64%;
+    }
+
+    .medium-col-9{
+        width: 74.97%;
+    }
+
+    .medium-col-10{
+        width: 83.3%;
+    }
+
+    .medium-col-11{
+        width: 91.63%;
+    }
+
+    .medium-col-12{
+        width: 100%;
+    }
+}
+
+/*\Small Screen \*/
+@media screen and (min-device-width: 414px)
+and (max-device-width: 736px)
+and (orientation: portrait){
+    .small-col-1{
+        width: 8.33%;
+    }
+
+    .small-col-2{
+        width: 16.67%;
+    }
+
+    .small-col-3{
+        width: 25%;
+    }
+
+    .small-col-4{
+        width: 33.33%;
+    }
+
+    .small-col-5{
+        width: 41.65%;
+    }
+
+    .small-col-6{
+        width: 50%;
+    }
+
+    .small-col-7{
+        width: 58.31%;
+    }
+
+    .small-col-8{
+        width: 66.64%;
+    }
+
+    .small-col-9{
+        width: 74.97%;
+    }
+
+    .small-col-10{
+        width: 83.3%;
+    }
+
+    .small-col-11{
+        width: 91.63%;
+    }
+
+    .small-col-12{
+        width: 100%;
+    }
+}
+
+/************
+NAV BAR
+************/
+
+nav{
+    height: 50px;
+    border-bottom: 1px solid lightgray;
+}
+
+.nav-links{
+    float: right;
+    font-family: raleway;
+    margin-right: 115px;
+}
+
+.nav-links li a{
+    color: black;
+}
+
+.nav-links li{
+    display: inline-block;
+    margin-right: 7px;
+    margin-top: 15px;
+}
+
+.nav-links li a:hover{
+    transition: background-color 1s ease, color 1s ease;
+    color: black;
+    background-color: white;
+}
+
+nav i{
+    color: black;
+    font-size: 22px;
+    float: left;
+    margin-left: 115px;
+    margin-right: 10px;
+}
+
+nav p{
+    float: left;
+    font-family: raleway;
+    letter-spacing: 0.5px;
+    font-size: 22px;
+    color: black;
+    padding-top: 12px;
+}
+
+.title{
+    float: right;
+    margin-right: 58%
+}
+
+.left-text h2{
+    margin-bottom: 10px;
+}
+
+.right-text h1{
+    margin-bottom: 10px;
+}
+
+.sf{
+    margin-top: 15px;
+    border: 1px solid lightgray;
+}
+
+footer{
+    height: 50px;
+    border-top: 1px solid lightgray;
+    text-align: center;
+    padding-top: 15px;
+}
+
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px){
+    .nav-links{
+        margin-right: 70px;
+    }
+    nav i{
+        margin-left: 70px;
+    }
+    .sf{
+        float: right;
+    }
+    .title{
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-device-width: 414px)
+and (max-device-width: 736px){
+    .title{
+        margin-right: 0;
+    }
+    .row{
+        margin-top: 50px;
+    }
+    .nav-links{
+        position: relative;
+    }
+    nav i{
+        margin-left: 55px;
+    }
+    .nav-links{
+        left: 10px
+    }
+}

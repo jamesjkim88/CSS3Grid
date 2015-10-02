@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    border-radius: 100px;
+}
+
+.top-row{
+    height: 150px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.row{
+    height: 100%;
+}
+
+.square, .rectangle{
+    visibility: hidden;
+}
+
+.row:after{
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: " ";
+    display: block;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+
+.col-1{
+    width: 8.33%;
+}
+
+.col-2{
+    width: 16.67%;
+}
+
+.col-3{
+    width: 25%;
+}
+
+.col-4{
+    width: 33.33%;
+}
+
+.col-5{
+    width: 41.65%;
+}
+
+.col-6{
+    width: 50%;
+}
+
+.col-7{
+    width: 58.31%;
+}
+
+.col-8{
+    width: 66.64%;
+}
+
+.col-9{
+    width: 74.97%;
+}
+
+.col-10{
+    width: 83.3%;
+}
+
+.col-11{
+    width: 91.63%;
+}
+
+.col-12{
+    width: 100%;
+}
+
+/*\Medium Screen \*/
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait){
+    .medium-col-1{
+        width: 8.33%;
+    }
+
+    .medium-col-2{
+        width: 16.67%;
+    }
+
+    .medium-col-3{
+        width: 25%;
+    }
+
+    .medium-col-4{
+        width: 33.33%;
+    }
+
+    .medium-col-5{
+        width: 41.65%;
+    }
+
+    .medium-col-6{
+        width: 50%;
+    }
+
+    .medium-col-7{
+        width: 58.31%;
+    }
+
+    .medium-col-8{
+        width: 66.64%;
+    }
+
+    .medium-col-9{
+        width: 74.97%;
+    }
+
+    .medium-col-10{
+        width: 83.3%;
+    }
+
+    .medium-col-11{
+        width: 91.63%;
+    }
+
+    .medium-col-12{
+        width: 100%;
+    }
+}
+
+/*\Small Screen \*/
+@media screen and (min-device-width: 414px)
+and (max-device-width: 736px)
+and (orientation: portrait){
+    .small-col-1{
+        width: 8.33%;
+    }
+
+    .small-col-2{
+        width: 16.67%;
+    }
+
+    .small-col-3{
+        width: 25%;
+    }
+
+    .small-col-4{
+        width: 33.33%;
+    }
+
+    .small-col-5{
+        width: 41.65%;
+    }
+
+    .small-col-6{
+        width: 50%;
+    }
+
+    .small-col-7{
+        width: 58.31%;
+    }
+
+    .small-col-8{
+        width: 66.64%;
+    }
+
+    .small-col-9{
+        width: 74.97%;
+    }
+
+    .small-col-10{
+        width: 83.3%;
+    }
+
+    .small-col-11{
+        width: 91.63%;
+    }
+
+    .small-col-12{
+        width: 100%;
+    }
+}
+
+
+.triangle{
+    margin-top:25px;
+    background: red;
+    display: inline-block;
+    height: 55px;
+    position: relative;
+    width: 100px;
+    float: right;
+    margin-right: 50px;
+}
+.triangle:before{
+    border-top: 35px solid red;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 55px;
+    width: 0;
+}
+
+.square{
+    display: inline-block;
+    height: 50px;
+    position: relative;
+    width: 50px;
+    float: right;
+    border: 1px solid black;
+    margin-top: 25px;
+}
+
+
+row{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.rectangle{
+    height: 50px;
+    float: right;
+    border: 1px solid black;
+}
+
+.circle-row{
+    margin-top: 50px;
+}
+
+.circles{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+
+
+footer{
+    border-top: 1px solid black;
+    height: 50px;
+    text-align: center;
+}
+
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px){
+    .triangle{
+        display: none;
+    }
+    .square{
+        visibility: visible;
+    }
+    .circles{
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-device-width: 414px)
+and (max-device-width: 736px){
+    .triangle, .square{
+        display: none;
+    }
+    .rectangle{
+        visibility: visible;
+    }
+    .circles{
+        margin-bottom: 0;
+    }
+}
